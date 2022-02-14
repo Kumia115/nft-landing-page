@@ -12,34 +12,12 @@
     <link rel="manifest" href="images/x-icon/site.webmanifest">
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <style>
-    .teamMemberName{
-        text-align: center; 
-        padding-top: 20px;
-        font-size: 25px;
-    }
-    .teamMemberDescription{
-        text-align: center;
-        /*font-family: Arial, Helvetica, sans-serif;*/
-      
-    }
-
-    .teamMember{
-        padding-bottom: 20px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-         transition: 0.3s;
-    }
-    .teamMember:hover{
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        opacity: 0.7;
-    }
-  </style>
 <body>
     <header id="header">
         <div class="container" style="margin: 0px; max-width: none;">
           <div class="logo">
             <a href="/">
-              <img src="images/x-icon/favicon-32x32.png" alt="logo" />
+              <img src="images/x-icon/android-chrome-192x192.png" alt="logo" style="border-radius: 50px; width: 80px;"/>
             </a>
           </div>
   
@@ -74,31 +52,96 @@
         </div>
       </header>
       
-      <section class="container" style="padding-top: 60px;">
+      <section class="container" style="padding-top: 0px;">
         <h1 style="text-align:center; padding: 50px 0 20px 0; font-size: 40px;">Meet the team</h1>
         <div class="meetTheTeam">
-            <div class="teamMember">
-                <img src="/images/team/sigma.jpg" style="width: 300px; height: 300px;">
-                <p class="teamMemberName">Tank Spoiler</p>
-                <p class="teamMemberDescription">Rug Puller</p>
+          <div class="teamMember">
+            <div class="img__wrap">
+                <img src="/images/team/clone.png" style="width: 300px; height: 300px;">
+                <p class="img__description container">Asiago has experience running multi platform gaming orginsations, major international companies, and has both a law and philosophy degree. 
+                   
+                  His role in BongHeads is to hand draw all of the art, manage and lead the community, market the project and deal with client/partnership relations,</p>
+                <p class="teamMemberName">Asiago</p>
+                <p class="teamMemberDescription">Founder / Artist / Entrepreneur</p>
+            </div>
             </div>
             <div style="padding: 0 50px">
-            <div class="teamMember">
-                <img src="/images/team/DAGGA.png" style="width: 300px; height: 300px;">
-                <p class="teamMemberName">Dagga</p>
-                <p class="teamMemberDescription">Mod</p>
+              <div class="teamMember">
+              <div class="img__wrap">
+                <img src="/images/team/valentinebong.png" style="width: 300px; height: 300px;">
+                <p class="img__description container">from England. She has a degree in Sound Engineering and Music Production. Daggas role in BongHeads will be to setup the discord server, setup all the anti bot measures, verification tools, and any other requirements for running a NFT project out of discord.</p>
+                <p class="teamMemberName">DAGGA</p>
+                <p class="teamMemberDescription">Discord Administrator</p>
             </div>
             </div>
+            </div>
             <div class="teamMember">
-                <img src="/images/team/millwall kid.png" style="width: 300px; height: 300px;">
+            <div class="img__wrap">
+                <img src="/images/team/laserskill.png" style="width: 300px; height: 300px;">
+                <p class="img__description container">Living in British Columbia. He has a master degree in Computer Science and Maths with multiple years experience in the coding industry. Sigma’s role in BongHeads will be to develop every aspect of any required backend system.</p>
                 <p class="teamMemberName">Sigma</p>
-                <p class="teamMemberDescription">Dev</p>
+                <p class="teamMemberDescription">Web Developer / Software Engineer</p>
+            </div>
             </div>
         </div>
        </section>
 
 
+       <style>
+         .teamMemberName{
+              text-align: center; 
+              padding-top: 20px;
+              font-size: 25px;
+          }
+          .teamMemberDescription{
+              text-align: center;
+              /*font-family: Arial, Helvetica, sans-serif;*/
+            
+          }
 
+          .teamMember{
+              padding-bottom: 100px;
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+              transition: 0.3s;
+          }
+          .teamMember:hover{
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+              opacity: 0.7;
+          }
+
+
+
+
+        .img__wrap {
+          position: relative;
+          height: 300px;
+          width: 300px;
+        }
+
+        .img__description {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: rgba(255, 255, 255, 0.72);
+          color: rgb(0, 0, 0);
+          visibility: hidden;
+          opacity: 0;
+
+          /* transition effect. not necessary */
+          transition: opacity .2s, visibility .2s;
+        }
+
+        .img__wrap:hover .img__description {
+          visibility: visible;
+          opacity: 1;
+        }
+
+
+
+
+       </style>
 
 
         <script>
