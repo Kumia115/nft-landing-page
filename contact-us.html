@@ -49,7 +49,7 @@
             <a class="navitem" href="Team.html">Team</a>
             <a class="navitem" href="">FAQ</a>
             <a class="navitem" href="">Whitepaper</a>
-
+            
           </div>
   
           <div class="menu">
@@ -73,55 +73,24 @@
           </div>
         </div>
       </header>
-      <section class="container" style="padding-top: 60px;">
-        <h1 style="text-align:center; padding: 50px 0 20px 0; font-size: 40px;">Meet the team</h1>
-        <div class="meetTheTeam">
-            <div class="teamMember">
-                <img src="/images/team/sigma.jpg" style="width: 300px; height: 300px;">
-                <p class="teamMemberName">Tank Spoiler</p>
-                <p class="teamMemberDescription">Rug Puller</p>
-            </div>
-            <div style="padding: 0 50px">
-            <div class="teamMember">
-                <img src="/images/team/DAGGA.png" style="width: 300px; height: 300px;">
-                <p class="teamMemberName">Dagga</p>
-                <p class="teamMemberDescription">Mod</p>
-            </div>
-            </div>
-            <div class="teamMember">
-                <img src="/images/team/millwall kid.png" style="width: 300px; height: 300px;">
-                <p class="teamMemberName">LingLing</p>
-                <p class="teamMemberDescription">Dev</p>
-            </div>
-        </div>
-       </section>
+
+      <section class="container">
 
 
-
-
-
-        <script>
-
-
-            // When the user scrolls the page, execute myFunction
-          window.onscroll = function() {myFunction()};
-          
-          // Get the header
-          var header = document.getElementById("header");
-          
-          // Get the offset position of the navbar
-          var sticky = header.offsetTop;
-          
-          // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-          function myFunction() {
-
-            if (window.pageYOffset > -1) {
-              header.classList.add("sticky");
-            } else {
-              header.classList.remove("sticky");
-            }
-          }
-          </script>
+        <!-- Sample HTML Form -->
+        <form action="mailto:bongheadnft@gmail.com"
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailForm">
+            Name:<br>
+            <input type="text" size="19" name="Contact-Name"><br><br>
+            Email:<br>
+            <input type="email" name="Contact-Email"><br><br> 
+            Message:<br> 
+            <textarea name="Contact-Message" rows="6″ cols="20″>
+            </textarea><br><br> 
+            <button type="submit" value="Submit">Send</button>
+        </form>
 
 
 
@@ -133,5 +102,34 @@
 
 
 
+
+
+
+
+
+
+
+
+      </section>
+      <script>
+        // When the user scrolls the page, execute myFunction
+      window.onscroll = function() {myFunction()};
+      
+      // Get the header
+      var header = document.getElementById("header");
+      
+      // Get the offset position of the navbar
+      var sticky = header.offsetTop;
+      
+      // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+      function myFunction() {
+
+        if (window.pageYOffset > -1) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+      </script>
 
 </body>
