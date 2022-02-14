@@ -1,0 +1,139 @@
+<head>
+    <title>BongHeads</title>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/x-icon/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png">
+    <link rel="manifest" href="images/x-icon/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <style>
+    .teamMemberName{
+        text-align: center; 
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .teamMemberDescription{
+        text-align: center;
+        /*font-family: Arial, Helvetica, sans-serif;*/
+      
+    }
+
+    .teamMember{
+        padding-bottom: 20px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+         transition: 0.3s;
+    }
+    .teamMember:hover{
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        opacity: 0.7;
+    }
+  </style>
+<body>
+    <header id="header">
+        <div class="container" style="margin: 0px; max-width: none;">
+          <div class="logo">
+            <a href="/">
+              <img src="images/x-icon/favicon-32x32.png" alt="logo" />
+            </a>
+          </div>
+  
+          <div class="navbar">
+            <a class="navitem" href="">Roadmap</a>
+            <a class="navitem" href="Team.html">Team</a>
+            <a class="navitem" href="">FAQ</a>
+            <a class="navitem" href="">Whitepaper</a>
+            <a class="navitem" href="">Contact</a>
+          </div>
+  
+          <div class="menu">
+            <a
+              href="" 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="images/header/discord.webp" alt="Discord" />
+            </a>
+            <a
+              href="https://twitter.com/BongHeadsNFT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="images/header/twitter.webp" alt="Twitter" />
+            </a>
+            <button class="wallet-btn btn" id="connectWallet">
+              <span>Connect Wallet</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <section class="container" style="padding-top: 60px;">
+        <h1 style="text-align:center; padding: 50px 0 20px 0; font-size: 40px;">Meet the team</h1>
+        <div class="meetTheTeam">
+            <div class="teamMember">
+                <img src="/images/team/sigma.jpg" style="width: 300px; height: 300px;">
+                <p class="teamMemberName">Tank Spoiler</p>
+                <p class="teamMemberDescription">Rug Puller</p>
+            </div>
+            <div style="padding: 0 50px">
+            <div class="teamMember">
+                <img src="/images/team/DAGGA.png" style="width: 300px; height: 300px;">
+                <p class="teamMemberName">Dagga</p>
+                <p class="teamMemberDescription">Mod</p>
+            </div>
+            </div>
+            <div class="teamMember">
+                <img src="/images/team/millwall kid.png" style="width: 300px; height: 300px;">
+                <p class="teamMemberName">LingLing</p>
+                <p class="teamMemberDescription">Dev</p>
+            </div>
+        </div>
+        <br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+
+
+
+
+
+        <script>
+
+
+            // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
+          
+          // Get the header
+          var header = document.getElementById("header");
+          
+          // Get the offset position of the navbar
+          var sticky = header.offsetTop;
+          
+          // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function myFunction() {
+
+            if (window.pageYOffset > -1) {
+              header.classList.add("sticky");
+            } else {
+              header.classList.remove("sticky");
+            }
+          }
+          </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

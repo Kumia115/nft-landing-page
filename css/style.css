@@ -5,10 +5,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
 /* GLOBAL STYLES */
+.navbar{
+text-align: center;
+width: 34%;
+
+
+}
 
 
 
+.content {
+  padding: 0px;
+}
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 0px;
+}
+
+
+.logo{
+  width: 33%;
+}
 
 .navitem{
   text-decoration: none;
@@ -16,8 +40,14 @@
   color: black;
 }
 
+.meetTheTeam{
+  display: flex;
+  
+}
 
-
+#header{
+  background-color: #cecece;
+}
 
 :root {
   --font-primary: 'Permanent Marker', sans-serif;
@@ -61,7 +91,7 @@ header {
 
 header .container {
   flex-direction: row;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
   align-items: center;
 }
 
@@ -69,6 +99,8 @@ header .container {
   display: flex;
   gap: 2rem;
   align-items: center;
+  justify-content: right;
+  width: 33%;
 }
 
 /* BUTTONS */
