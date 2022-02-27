@@ -1,0 +1,207 @@
+<head>
+    <title>BongHeads</title>
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="/images/x-icon/favicon.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/x-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png">
+    <link rel="manifest" href="images/x-icon/site.webmanifest">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <style>
+   
+     
+     .accordion {
+     background-color: #eee;
+     color: #444;
+     cursor: pointer;
+     padding: 25px;
+     width: 100%;
+     border: none;
+     text-align: left;
+     outline: none;
+     font-size: 15px;
+     transition: 0.4s;
+     margin-top: 20px;
+     border-radius: 15px 15px 0px 0px;
+     font-size: 32px;
+     font-weight: bold;
+   }
+   
+   .active, .accordion:hover {
+     background-color: #ccc;
+   }
+   
+   .accordion:after {
+     content: '\25BC';
+     color: #777;
+     font-weight: bold;
+     float: right;
+     margin-left: 5px;
+   }
+   
+   .active:after {
+     content: "\25B2";
+   }
+   
+   .accordionText {
+     padding: 0px 18px;
+     border: none;
+     background-color: white;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.4s ease-in-out;
+     font-size: 18px;
+     border-radius: 0px 0px 15px 15px;
+     border: 1px solid black;
+     border-top: none;
+   }
+   </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+    <header id="header">
+        <div class="container" style="margin: 0px; max-width: none;">
+          <div class="logo">
+            <a href="/">
+              <img src="images/x-icon/android-chrome-192x192.png" alt="logo" style="border-radius: 50px; width: 80px;"/>
+            </a>
+          </div>
+  
+          <div class="navbar">
+            <a class="navitem" href="index.html">Home</a>  
+            <a class="navitem" href="/roadmap.html">Roadmap</a>
+            <a class="navitem" href="Team.html">Team</a>
+            <a class="navitem" href="">FAQ</a>
+            <a class="navitem" href="">Whitepaper</a>
+
+          </div>
+  
+          <div class="menu">
+            <a
+              href="https://discord.com/invite/bongheadsnft" 
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="images/header/discord.webp" alt="Discord" />
+            </a>
+            <a
+              href="https://twitter.com/BongHeadsNFT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="images/header/twitter.webp" alt="Twitter" />
+            </a>
+            <button class="wallet-btn btn" id="connectWallet">
+              <span>Connect Wallet</span>
+            </button>
+          </div>
+        </div>
+      </header>
+      
+      <section class="container" style="padding-top: 20px; ">
+        <h2 style="text-align: center;" style="text-align: center;">Frequently Asked Questions</h2>
+
+        <button class="accordion" style="font-family: var(--font-primary);">What are BongHeads?</button>
+        <div class="accordionText">
+        <p style="padding: 15px 0px;" style="padding: 25px 0px 0px 0px;">Uniquely, hand drawn NFTs building utility and passive income.</p>
+        </div>
+
+        <button class="accordion" style="font-family: var(--font-primary);">Who is the artist?</button>
+        <div class="accordionText">
+        <p style="padding: 15px 0px;" style="padding: 25px 0px 0px 0px;">Asiago.</p>
+        </div>
+
+        <button class="accordion" style="font-family: var(--font-primary);">When Is Mint Date?</button>
+        <div class="accordionText">
+        <p style="padding: 15px 0px;" style="padding: 25px 0px 0px 0px;">Announced Soon!</p>
+        </div>
+
+        <button class="accordion" style="font-family: var(--font-primary);">How Much Is The Mint?</button>
+        <div class="accordionText">
+        <p style="padding: 15px 0px;" style="padding: 25px 0px 0px 0px;">Whitelist members will be able to mint for 1 SOL, afterwards we will hold a public mint for the remaining bongheads for 1.5 SOL.</p>
+        </div>
+
+        <button class="accordion" style="font-family: var(--font-primary);">What Secondary Market Will BongHeads Be Listed On?</button>
+        <div class="accordionText">
+        <p style="padding: 15px 0px;" style="padding: 25px 0px 0px 0px;">Magic Eden.</p>
+        </div>
+
+        <button class="accordion" style="font-family: var(--font-primary);">Will there be a wallet checker to make sure my wallet is listed for WL</button>
+        <div class="accordionText">
+        <p style="padding: 15px 0px;" style="padding: 25px 0px 0px 0px;">Yes, we will produce are wallet checker closer to mint date. This will allow enough time for anyone who believe they won WL and their wallet isn't there, to open a ticket and resolve the problem.</p>
+        </div>
+
+        <h2 style="padding-top:40px; padding-bottom: 20px; text-align: center;">Still have questions?</h2>
+        <p style="text-align: center; font-size: 18px;">All your questions can be answered by our team in our <a href="https://discord.com/invite/bongheadsnft">discord server!</a></p>
+
+      </section>
+
+       <script>
+
+
+            // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
+          
+          // Get the header
+          var header = document.getElementById("header");
+          
+          // Get the offset position of the navbar
+          var sticky = header.offsetTop;
+          
+          // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function myFunction() {
+
+            if (window.pageYOffset > -1) {
+              header.classList.add("sticky");
+            } else {
+              header.classList.remove("sticky");
+            }
+          }
+          </script> 
+
+
+
+
+
+
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var accordionText= this.nextElementSibling;
+        if (accordionText.style.maxHeight) {
+          accordionText.style.maxHeight = null;
+        } else {
+          accordionText.style.maxHeight = accordionText.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
+
+
+
+
+
+
+</body>

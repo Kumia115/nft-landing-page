@@ -46,15 +46,11 @@ width: 50%;
   
 }
 
-#header{
-  background-color: #cecece;
-}
-
 :root {
   --font-primary: 'Permanent Marker', sans-serif;
   --font-secondary: 'Permanent Marker', serif;
   --font-code: 'Roboto', monospace;
-  --bg-color: #cecece;
+  --bg-color: #50b63b;
   --font-color: #000000;
   --btn-bg-color: #1d0ea5;
   --accent-color: #cdedfc;
