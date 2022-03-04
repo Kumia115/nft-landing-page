@@ -11,6 +11,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/x-icon/favicon-16x16.png">
     <link rel="manifest" href="images/x-icon/site.webmanifest">
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/particles.css" />
+
   </head>
 <body>
     <header id="header">
@@ -26,7 +28,7 @@
             <a class="navitem" href="/roadmap.html">Roadmap</a>
             <a class="navitem" href="Team.html">Team</a>
             <a class="navitem" href="/FAQ.html">FAQ</a>
-            <a class="navitem" href="">Whitepaper</a>
+           
 
           </div>
   
@@ -45,7 +47,7 @@
             >
               <img src="images/header/twitter.webp" alt="Twitter" />
             </a>
-            <button class="wallet-btn btn" id="connectWallet">
+            <button class="wallet-btn btn"><!-- id="connectWallet" -->
               <span>Connect Wallet</span>
             </button>
           </div>
@@ -64,11 +66,35 @@
           font-size: 20px;
         }
 
+        @media screen and (max-width: 1380px) {
+       
+   
+       .mobileFont{
+          display: none;
+  
+       }
 
+       .newContainer{
+          margin: 0 0px !important;
+       }
+
+      }
 
         .description:last-of-type{
           margin:auto;
         }
+      .newContainer{
+        display:flex; 
+        padding-top: 50px; 
+        margin: 0 100px;
+      }
+      @media screen and (max-width: 1800px) {
+        .mobileTitle{
+         
+
+        }
+
+      }
       </style>
       
         <div style="padding-top: 0px"> 
@@ -76,7 +102,7 @@
         </div>
 
         <div>
-        <div style="display:flex; padding-top: 50px; margin: 0 100px;">
+        <div class="newContainer">
             <div id="firstHalf" style="width: 50%;">
               <section class="container" style="height: 100%;">
                 <div class="topHeight" style="display: flex; word-wrap: break-word; justify-content: space-between;">
@@ -86,8 +112,8 @@
                     
                   </div>
                   <div style="width: 75%; align-self:center; text-align: center;">
-                    <h2 style="text-align: center;">Merch</h2>
-                    <p>Free BongHeads merch will be given to all holders of our NFTs. 
+                    <h2 class="mobileTitle" style="text-align: center;">Merch</h2>
+                    <p class="mobileFont">Free BongHeads merch will be given to all holders of our NFTs. 
                       The merch will be grinders, lighters, zippos, hoodies, eco friendly cups, patches, and sticker decals. </p>
                   </div>
                   </div>
@@ -97,22 +123,22 @@
                       
                     </div>
                     <div style="width: 75%; align-self:center; text-align: center;">
-                      <h2 style="text-align: center;">BongHeads Casino</h2>
-                      <p>We will launch the BongHeads casino game known as Crash. Crash will be playable on High Roller Hippo Cliques Casino. 
-                        Holders of our NFT will earn revenue share from the house profits.</p><br><p>
+                      <h2 class="mobileTitle" style="text-align: center;">BongHeads Casino</h2>
+                      <p class="mobileFont">We will launch the BongHeads casino game known as Crash. Crash will be playable on High Roller Hippo Cliques Casino. 
+                        Holders of our NFT will earn revenue share from the house profits.</p><br><p class="mobileFont">
                         
                         BongHeads will also implement future games, aswell as explore creating their own casino, and listing their casino games on other Casino sites.</p>
                     </div>
 
                 </div>
-                <div class="description" style="display: flex; word-wrap: break-word; justify-content: space-between;">
+                <div class="" style="display: flex; word-wrap: break-word; justify-content: space-between; margin-top: auto; margin-bottom: auto;">
                   <div style="width: 170px; align-self:center">
                     <img src="/images/roadmap/bottom-left.png" width="170px">
                     
                   </div>
                   <div style="width: 75%; align-self:center; text-align: center;">
-                    <h2 style="text-align: center;">Evolution</h2>
-                    <p>BongHeads will have a deflationary evolution system that cuts the supply in half and evolves your BongHead. </p>
+                    <h2 class="mobileTitle" style="text-align: center;">Evolution</h2>
+                    <p class="mobileFont">BongHeads will have a deflationary evolution system that cuts the supply in half and evolves your BongHead. </p>
                   </div>
 
               </div>
@@ -126,9 +152,9 @@
                             
                         </div>
                         <div style="width: 75%; align-self:center; text-align: center;">
-                            <h2 style="text-align: center;">BongHeads online store</h2>
-                            <p>BongHeads will explore having their own online retail store that sells their own merch and smoke products. 
-                              Pipes, bongs, merch, etc.</p><br><p>Holders will recieve a revenue share from the profits of the store. </p>
+                            <h2 class="mobileTitle" style="text-align: center;">BongHeads online store</h2>
+                            <p class="mobileFont">BongHeads will explore having their own online retail store that sells their own merch and smoke products. 
+                              Pipes, bongs, merch, etc.</p><br><p class="mobileFont">Holders will recieve a revenue share from the profits of the store. </p>
  
                         </div>
                     </div>
@@ -138,8 +164,8 @@
                           
                       </div>
                       <div style="width: 75%; align-self:center; text-align: center;">
-                          <h2 style="text-align: center;">BongHeads retail products</h2>
-                          <p>BongHeads will traverse the world of CBD oil, ointments, vape products, and tobacco blends.</p><br><p>
+                          <h2 class="mobileTitle" style="text-align: center;">BongHeads retail products</h2>
+                          <p class="mobileFont">BongHeads will traverse the world of CBD oil, ointments, vape products, and tobacco blends.</p><br><p class="mobileFont">
 
                             Holders will also recieve a revenue share from the profits of all products sold </p>
 
@@ -151,9 +177,9 @@
                         
                     </div>
                     <div style="width: 75%; align-self:center; text-align: center;">
-                        <h2 style="text-align: center;">Exclusivity and events</h2>
-                        <p>Holding a BongHead NFT is your ticket to being payed from all business ventures the project takes.
-                          BongHeads will expand across all of the Web 3 utilities, aswell as real life.</p><br><p>
+                        <h2 class="mobileTitle" style="text-align: center;">Exclusivity and events</h2>
+                        <p class="mobileFont">Holding a BongHead NFT is your ticket to being payed from all business ventures the project takes.
+                          BongHeads will expand across all of the Web 3 utilities, aswell as real life.</p><br><p class="mobileFont">
                           
                           Holding a BongHead NFT will also grant you free entry to all events we do, and exclusive access to every journey the project will take.</p>
 
@@ -164,7 +190,9 @@
         </div>
         </div>
     </section>
-
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
        <!-- <script>
 
 
@@ -187,7 +215,6 @@
             }
           }
           </script>-->
-
 
 
 
