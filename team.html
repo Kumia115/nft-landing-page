@@ -32,6 +32,7 @@
           </div>
   
           <div class="menu">
+            <div class="hideSocials">
             <a
               href="https://discord.com/invite/bongheadsnft" 
               target="_blank"
@@ -46,6 +47,7 @@
             >
               <img src="images/header/twitter.webp" alt="Twitter" />
             </a>
+            </div>
             <button class="wallet-btn btn"><!-- id="connectWallet" -->
               <span>Connect Wallet</span>
             </button>
@@ -58,7 +60,7 @@
         <div class="meetTheTeam">
           <div class="teamMember">
             <div class="img__wrap">
-                <img src="/images/team/Asiago-final.png" style="width: 300px; height: 300px;">
+                <img src="/images/team/Asiago-final.jpeg" style="width: 100%; height: auto;">
                 <p class="img__description container">Asiago has experience running multi platform gaming orginsations, major international companies, and has both a law and philosophy degree. 
                    
                   His role in BongHeads is to hand draw all of the art, manage and lead the community, market the project and deal with client/partnership relations.</p>
@@ -66,10 +68,10 @@
                 <p class="teamMemberDescription">Founder / Artist / Entrepreneur</p>
             </div>
             </div>
-            <div style="padding: 0 50px">
+            <div class="cardSpacing">
               <div class="teamMember">
               <div class="img__wrap">
-                <img src="/images/team/Dagga-final.png" style="width: 300px; height: 300px;">
+                <img src="/images/team/Dagga-final.jpeg" style="width: 100%; height: auto;">
                 <p class="img__description container">From England. She has a degree in Sound Engineering and Music Production. Daggas role in BongHeads will be to setup the discord server, setup all the anti bot measures, verification tools, and any other requirements for running an NFT project out of discord.</p>
                 <p class="teamMemberName">DAGGA</p>
                 <p class="teamMemberDescription">Discord Administrator</p>
@@ -78,7 +80,7 @@
             </div>
             <div class="teamMember">
             <div class="img__wrap">
-                <img src="/images/team/laserskill.png" style="width: 300px; height: 300px;">
+                <img src="/images/team/laserskull.jpeg" style="width: 100%; height: auto;">
                 <p class="img__description container">Living in British Columbia. He has a master degree in Computer Science and Maths with multiple years experience in the coding industry. Sigma’s role in BongHeads will be to develop every aspect of any required backend system.</p>
                 <p class="teamMemberName">Sigma</p>
                 <p class="teamMemberDescription">Web Developer / Software Engineer</p>
@@ -117,14 +119,29 @@
               box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
               opacity: 0.7;
           }
-
-
-
+         
+          .meetTheTeam{
+             display: flex;
+  
+          }
+          .cardSpacing{
+            padding: 0 50px;
+          }
+ 
+          @media screen and (max-width: 1100px) {
+            .meetTheTeam{
+              display: block;
+            }
+            .cardSpacing{
+              padding: 50px 0;
+            }
+          }
+          
 
         .img__wrap {
           position: relative;
           height: 300px;
-          width: 300px;
+          
         }
 
         .img__description {
@@ -153,28 +170,6 @@
        </style>
 
 
-        <script>
-
-
-            // When the user scrolls the page, execute myFunction
-          window.onscroll = function() {myFunction()};
-          
-          // Get the header
-          var header = document.getElementById("header");
-          
-          // Get the offset position of the navbar
-          var sticky = header.offsetTop;
-          
-          // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-          function myFunction() {
-
-            if (window.pageYOffset > -1) {
-              header.classList.add("sticky");
-            } else {
-              header.classList.remove("sticky");
-            }
-          }
-          </script>
 
 
   

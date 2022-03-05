@@ -10,6 +10,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/x-icon/apple-touch-icon.png">
@@ -40,6 +41,7 @@
         </div>
 
         <div class="menu">
+          <div class="hideSocials">
           <a
             href="https://discord.com/invite/bongheadsnft" 
             target="_blank"
@@ -54,6 +56,7 @@
           >
             <img src="images/header/twitter.webp" alt="Twitter" />
           </a>
+          </div>
           <button class="wallet-btn btn"> <!-- id="connectWallet" -->
             <span>Connect Wallet</span>
           </button>
@@ -72,13 +75,14 @@
 
 
     <section>
-      <img src="/images/banner-no-text.png" width="100%" height="1000px">
+      <img src="/images/banner-no-text.png" width="100%" style="height: 50vw">
       
 
-      <h1 style="text-align: center; font-size: 70px; text-decoration: underline;">BongHeads</h1>
+      
     </section>
 
-    <section class="container" style="padding-top: 50px;">
+    <section class="container" style="padding-top: 50px; width: 100%;">
+      <h1 style="text-align: center; font-size: 7vw; text-decoration: underline; padding-bottom: 40px;">BongHeads</h1>
       <div class="owner-status"></div>
        <div class="countdown">
         <ul
@@ -87,7 +91,7 @@
           data-date="Mar 20, 2022 8:30:00 PM UTC"
         >
           <li class="clock-item">
-            <span class="count-number days">40</span>
+            <span class="count-number days">20</span>
             <p class="count-text">Days</p>
           </li>
 
@@ -111,10 +115,10 @@
         
        
       </div> 
-    </section>
     
-    <section class="" style="padding-top: 50px; margin: 0 0;">
-      <div style="display:flex">
+    
+   
+      <div class="mintDescription">
       <div class="nftFeature">
         <h2>2420</h2>
         <p>BongHead's</p>
@@ -134,23 +138,22 @@
 
       
 
-    </section>
-    <section class="container" style="">
+ 
       
-      <div style="display: flex; justify-content: space-between; padding-top: 100px;">
+      <div class="whySupportBong" style="display: flex; justify-content: space-between; padding-top: 150px;">
         <div>
         <h2 style="text-decoration: underline; padding-bottom: 20px;">Why Support BongHeads</h2>
         <p>BongHeads NFT is your ticket to being a part shareholder in every business venture the project takes. From Casino earnings, to online retail stores, to real life product store integration, and much more. Holding BongHeads will earn you passive income and will be your ticketed entry into the staking and deflationary evolution systems we will explore.</p>
         </div>
         <div id="4_bongs">
-            <div id="row1" style="display: flex;">
-              <img style="margin-right: 20px; border-radius: 10px;" src="/images/whyBong/body3.png" width="250px">
-              <img style="border-radius: 10px;"src="/images/whyBong/body1.png" width="250px">
+            <div id="row1" class="whySupportImage">
+              <img class="supportImage" style="margin-right: 20px; border-radius: 10px;" src="/images/whyBong/body3.png" width="250px">
+              <img class="supportImage" style="border-radius: 10px;"src="/images/whyBong/body1.png" width="250px">
 
             </div>
-            <div id="row2" style="display: flex; padding-top: 20px;">
-              <img style="margin-right: 20px; border-radius: 10px;" src="/images/whyBong/body2.png" width="250px">
-              <img style="border-radius: 10px;"src="/images/whyBong/body4.png" width="250px">
+            <div id="row2" class="whySupportImage" style="padding-top: 20px;">
+              <img class="supportImage" style="margin-right: 20px; border-radius: 10px;" src="/images/whyBong/body2.png" width="250px">
+              <img class="supportImage" style="border-radius: 10px;"src="/images/whyBong/body4.png" width="250px">
               
             </div>
 
@@ -181,6 +184,47 @@
 
 
   <style>
+     @media screen and (max-width: 830px) {
+            .whySupportBong{
+            display: block !important;
+
+          }
+
+     }
+     .whySupportImage{
+            display: flex;
+    }
+    .mintDescription{
+      display: flex;
+      justify-content: space-around;
+      padding-top: 100px;
+
+    }
+          @media screen and (max-width: 700px) {
+            .mintDescription{
+              display: block;
+
+            }
+            .nftFeature{
+              width: 100% !important;
+              padding-bottom: 20px !important;
+            }
+            .whySupportImage{
+              display: block;
+              padding-top: 0px !important;
+              text-align: center;
+
+            }
+            .supportImage{
+              margin-right:0px !important;
+            }
+            .countdown{
+              transform: scale(0.6);
+            }
+          }
+
+
+
     .nftFeature{
       padding: 0 40px;
       text-align: center;

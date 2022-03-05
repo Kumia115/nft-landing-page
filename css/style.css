@@ -14,10 +14,17 @@ width: 50%;
 
 }
 
+.hideSocials{
+display: contents;
 
+}
+@media screen and (max-width: 650px) {
+  .hideSocials{
+  display: none !important;
 
+}
 
-
+}
 
 
 
@@ -47,13 +54,10 @@ width: 50%;
   text-decoration: none;
   padding: 0 20px;
   color: black;
-  font-size: 20px;
+  font-size: 22px;
 }
 
-.meetTheTeam{
-  display: flex;
-  
-}
+
 
 :root {
   --font-primary: 'Arvo', sans-serif;
@@ -84,7 +88,7 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  max-width: 1460px;
+  max-width: 1660px;
   margin: 0 auto;
   padding: 1rem 2rem;
 }
@@ -103,10 +107,10 @@ header .container {
 
 .menu {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
   justify-content: right;
-  width: 25%;
+  width: 30%;
 }
 
 /* BUTTONS */

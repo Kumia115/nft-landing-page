@@ -33,6 +33,7 @@
           </div>
   
           <div class="menu">
+            <div class="hideSocials">
             <a
               href="https://discord.com/invite/bongheadsnft" 
               target="_blank"
@@ -47,6 +48,7 @@
             >
               <img src="images/header/twitter.webp" alt="Twitter" />
             </a>
+            </div>
             <button class="wallet-btn btn"><!-- id="connectWallet" -->
               <span>Connect Wallet</span>
             </button>
@@ -54,61 +56,20 @@
         </div>
       </header>
 
-      <style>
-        .topHeight{
-          height: 150px;
-        }
-        .middleHeight{
-          height: 350px;
-
-        }
-        p{
-          font-size: 20px;
-        }
-
-        @media screen and (max-width: 1380px) {
-       
-   
-       .mobileFont{
-          display: none;
-  
-       }
-
-       .newContainer{
-          margin: 0 0px !important;
-       }
-
-      }
-
-        .description:last-of-type{
-          margin:auto;
-        }
-      .newContainer{
-        display:flex; 
-        padding-top: 50px; 
-        margin: 0 100px;
-      }
-      @media screen and (max-width: 1800px) {
-        .mobileTitle{
-         
-
-        }
-
-      }
-      </style>
+      
       
         <div style="padding-top: 0px"> 
-        <img src="/images/roadmap.png" style="width: 100%; height: 900px;">
+        <img src="/images/roadmap.png" style="width: 100%; height: 50vw;">
         </div>
 
         <div>
-        <div class="newContainer">
-            <div id="firstHalf" style="width: 50%;">
-              <section class="container" style="height: 100%;">
-                <div class="topHeight" style="display: flex; word-wrap: break-word; justify-content: space-between;">
+        <div class="container roadmapContainer">
+            <div id="firstHalf" style="padding-bottom: 100px;">
+              <section class="" style="height: 100%;">
+                <div class="topHeight" style="display: flex; word-wrap: break-word; justify-content: space-around;">
 
-                  <div style="width: 170px; align-self:center">
-                    <img src="/images/roadmap/top-left.png" width="170px">
+                  <div style="align-self:center">
+                    <img src="/images/roadmap/top-left.png"class="roadmapCloud">
                     
                   </div>
                   <div style="width: 75%; align-self:center; text-align: center;">
@@ -117,9 +78,9 @@
                       The merch will be grinders, lighters, zippos, hoodies, eco friendly cups, patches, and sticker decals. </p>
                   </div>
                   </div>
-                  <div class="middleHeight" style="display: flex; word-wrap: break-word; justify-content: space-between; padding: 60px 0">
-                    <div style="width: 170px; align-self:center">
-                      <img src="/images/roadmap/middle-left.png" width="170px">
+                  <div class="middleHeight" style="display: flex; word-wrap: break-word; justify-content: space-around; padding: 60px 0">
+                    <div style="align-self:center">
+                      <img src="/images/roadmap/middle-left.png" class="roadmapCloud">
                       
                     </div>
                     <div style="width: 75%; align-self:center; text-align: center;">
@@ -131,9 +92,9 @@
                     </div>
 
                 </div>
-                <div class="" style="display: flex; word-wrap: break-word; justify-content: space-between; margin-top: auto; margin-bottom: auto;">
-                  <div style="width: 170px; align-self:center">
-                    <img src="/images/roadmap/bottom-left.png" width="170px">
+                <div class="" style="display: flex; word-wrap: break-word; justify-content: space-around; margin-top: auto; margin-bottom: auto;">
+                  <div style="align-self:center">
+                    <img src="/images/roadmap/bottom-left.png" class="roadmapCloud">
                     
                   </div>
                   <div style="width: 75%; align-self:center; text-align: center;">
@@ -144,11 +105,11 @@
               </div>
               </section>
             </div>
-            <div id="secondHalf"style="width: 50%;">
-                <section class="container" style="height: 100%;">
-                    <div class="topHeight" style="display: flex; word-wrap: break-word; justify-content: space-between;">
-                        <div style="width: 170px; align-self:center">
-                            <img src="/images/roadmap/top-right.png" width="170px">
+            <div id="secondHalf">
+                <section class="" style="height: 100%; padding-bottom: 100px;">
+                    <div class="topHeight" style="display: flex; word-wrap: break-word; justify-content: space-around;">
+                        <div style="align-self:center">
+                            <img src="/images/roadmap/top-right.png" class="roadmapCloud">
                             
                         </div>
                         <div style="width: 75%; align-self:center; text-align: center;">
@@ -158,9 +119,9 @@
  
                         </div>
                     </div>
-                    <div class="middleHeight" style="display: flex; word-wrap: break-word; justify-content: space-between; padding: 60px 0">
-                      <div style="width: 170px; align-self:center">
-                          <img src="/images/roadmap/middle-right.png" width="170px">
+                    <div class="middleHeight" style="display: flex; word-wrap: break-word; justify-content: space-around; padding: 60px 0">
+                      <div style="align-self:center">
+                          <img src="/images/roadmap/middle-right.png" class="roadmapCloud">
                           
                       </div>
                       <div style="width: 75%; align-self:center; text-align: center;">
@@ -171,9 +132,9 @@
 
                       </div>
                   </div>
-                  <div style="display: flex; word-wrap: break-word; justify-content: space-between;">
-                    <div style="width: 170px; align-self:center">
-                        <img src="/images/roadmap/bottom-right.png" width="170px">
+                  <div style="display: flex; word-wrap: break-word; justify-content: space-around;">
+                    <div style="align-self:center">
+                        <img src="/images/roadmap/bottom-right.png" class="roadmapCloud">
                         
                     </div>
                     <div style="width: 75%; align-self:center; text-align: center;">
@@ -194,31 +155,58 @@
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
-       <!-- <script>
+    <style>
+      .roadmapCloud{
+        width: 140px;
+
+      }
 
 
-            // When the user scrolls the page, execute myFunction
-          window.onscroll = function() {myFunction()};
-          
-          // Get the header
-          var header = document.getElementById("header");
-          
-          // Get the offset position of the navbar
-          var sticky = header.offsetTop;
-          
-          // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-          function myFunction() {
+      .roadmapContainer{
+        flex-direction: row;
+        padding-top: 50px;
 
-            if (window.pageYOffset > -1) {
-              header.classList.add("sticky");
-            } else {
-              header.classList.remove("sticky");
-            }
+      }
+     
+        .topHeight{
+          height: 150px;
+        }
+        .middleHeight{
+          height: 350px;
+
+        }
+        p{
+          font-size: 20px;
+        }
+
+        @media screen and (max-width: 1380px) {
+          .roadmapContainer{
+            flex-direction: column;
           }
-          </script>-->
+ 
 
+       .newContainer{
+          margin: 0 0px !important;
+       }
 
+      }
 
+        .description:last-of-type{
+          margin:auto;
+        }
+      .newContainer{
+        display:flex; 
+        padding-top: 50px; 
+        margin: 0 100px;
+      }
+      @media screen and (max-width: 550px) {
+        .mobileFont{
+          font-size: 3vw;
+        }
+      }
+
+ 
+      </style>
 
 
 
