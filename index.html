@@ -120,15 +120,15 @@
    
       <div class="mintDescription">
       <div class="nftFeature">
-        <h2>2420</h2>
+        <h2 class="mintDescH2">2420</h2>
         <p>BongHead's</p>
       </div>
       <div class="nftFeature">
-        <div style="display:flex; place-content: center;"><h2>1 SOL</h2><img src="/images/solana-sol-logo.png" width="70px" height="70px" style="margin-left: 20px;"></div>
+        <div style="display:flex; place-content: center;"><h2 class="mintDescH2">1 SOL</h2><img src="/images/solana-sol-logo.png" width="70px" height="70px" style="margin-left: 20px;"></div>
         <p>Whitelist Mint Price</p>
       </div>
       <div class="nftFeature">
-        <div style="display:flex; place-content: center;"><h2>1.5 SOL</h2><img src="/images/solana-sol-logo.png" width="70px" height="70px" style="margin-left: 20px;"></div>
+        <div style="display:flex; place-content: center;"><h2 class="mintDescH2">1.5 SOL</h2><img src="/images/solana-sol-logo.png" width="70px" height="70px" style="margin-left: 20px;"></div>
         <p>Public Mint Price</p>
       </div>
       
@@ -198,9 +198,15 @@
       display: flex;
       justify-content: space-around;
       padding-top: 30px;
-
     }
+    
           @media screen and (max-width: 700px) {
+            .mintDescH2{
+
+            font-size: 28px;
+            align-self: center;
+            }
+
             .mintDescription{
               display: block;
 
